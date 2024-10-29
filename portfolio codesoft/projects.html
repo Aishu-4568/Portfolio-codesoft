@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Aishwarya</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #f8f8f8;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            background-attachment: fixed;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: goldenrod;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: cornsilk;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: goldenrod;
+            transform: scale(1.1);
+        }
+
+        /* Main Styling */
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            padding: 50px;
+            background: linear-gradient(135deg, #2c2c2c, #1c1c1c);
+        }
+
+        /* Content container styling */
+        .content {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Section Styling */
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .section:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+        }
+
+        .section h2 {
+            color: goldenrod;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+        /* Projects List */
+        .projects {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap onto new lines */
+            gap: 20px; /* Space between project items */
+        }
+
+        .project {
+            background: rgba(237, 218, 113, 0.2);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            width: 300px; /* Increased width */
+            height: 300px; /* Increased height for larger square shape */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .project img {
+            max-width: 80%; /* Adjust size to fit within the square */
+            max-height: 80%; /* Maintain aspect ratio */
+            height: auto; 
+            border-radius: 10%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .project img:hover {
+            transform: scale(1.05);
+        }
+
+        .project strong {
+            font-size: 20px;
+            color: goldenrod;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        .project p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #f0e68c;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            main {
+                padding: 20px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .project {
+                padding: 15px; /* Reduced padding for smaller screens */
+                width: 100%; /* Allow full width on smaller screens */
+                height: auto; /* Adjust height for smaller screens */
+            }
+        }
+
+        
+        /* Footer Styling */
+        footer {
+            padding: 30px; /* Increased padding for more space */
+            background: linear-gradient(135deg, #000, #444); /* Gradient background */
+            color: cornsilk;
+            text-align: center;
+            margin-top: 50px; /* Margin to separate from the main content */
+            border-top: 3px solid goldenrod; /* Top border for a decorative touch */
+        }
+
+        footer p {
+            margin: 5px 0; /* Space between footer paragraphs */
+        }
+
+        footer a {
+            color: goldenrod;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #ffdb58; /* Lighten the color on hover */
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); /* Shadow effect on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aishwarya</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contactme.html">CONTACT ME</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <div class="section">
+            <h2>Projects</h2>
+            <ul class="projects">
+                <li class="project">
+                    <strong>Movie Database</strong>
+                    <img src="movie database.jpeg" alt="Movie Database">
+                    <p>A web application to create and manage a movie database.</p>
+                </li>
+                <li class="project">
+                    <strong>Note-Taking App</strong>
+                    <img src="note taking.jpeg" alt="Note-Taking App">
+                    <p>A simple note-taking application that allows users to create and manage notes.</p>
+                </li>
+                <li class="project">
+                    <strong>Heart Disease Prediction</strong>
+                    <img src="heart disease prediction.jpeg" alt="Graphs">
+                    <p>A web application to visualize data using various graph formats.</p>
+                </li>
+                <li class="project">
+                    <strong>To-Do</strong>
+                    <img src="todo.jpeg" alt="Portfolio">
+                    <p>A personal portfolio website showcasing my projects and skills.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Connect with me on <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    <p>&copy; 2024 Aishwarya</p>
+</footer>
+
+</body>
+</html>

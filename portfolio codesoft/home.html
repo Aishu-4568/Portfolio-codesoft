@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #f8f8f8;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            background-attachment: fixed;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: goldenrod;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: cornsilk;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: goldenrod;
+        }
+
+        /* Main Styling */
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the content */
+            padding: 50px;
+            background: linear-gradient(135deg, #2c2c2c, #1c1c1c);
+        }
+
+        /* Content container styling */
+        .content {
+            display: flex;
+            justify-content: space-between; /* Space out the text and image */
+            align-items: flex-start;
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Text section styling */
+        .text-section {
+            max-width: 600px;
+        }
+
+        .text-section h1 {
+            color: #ffd700;
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 8px #000;
+        }
+
+        .text-section p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #f0e68c;
+            margin-bottom: 20px;
+        }
+
+        /* Image styling */
+        .image-section img {
+            max-width: 300px;
+            height: 300px;
+            border-radius: 10%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            transform: rotate(5deg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-section img:hover {
+            transform: rotate(0deg) scale(1.05);
+            box-shadow: 0 15px 30px rgba(243, 238, 238, 0.8);
+        }
+
+        /* Button and Social Icons */
+        .resume-btn {
+            background-color: goldenrod;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 30px; /* Added space above the button */
+        }
+
+        .resume-btn:hover {
+            background-color: #ffdb58;
+        }
+
+        .social-icons {
+            display: flex;
+        }
+
+        .social-icons a {
+            color: cornsilk;
+            margin-left: 15px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .social-icons a:hover {
+            color: goldenrod;
+        }
+
+
+        
+        /* Footer Styling */
+        footer {
+            padding: 30px; /* Increased padding for more space */
+            background: linear-gradient(135deg, #000, #444); /* Gradient background */
+            color: cornsilk;
+            text-align: center;
+            margin-top: 50px; /* Margin to separate from the main content */
+            border-top: 3px solid goldenrod; /* Top border for a decorative touch */
+        }
+
+        footer p {
+            margin: 5px 0; /* Space between footer paragraphs */
+        }
+
+        footer a {
+            color: goldenrod;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #ffdb58; /* Lighten the color on hover */
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); /* Shadow effect on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aishwarya</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contactme.html">CONTACT ME</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <div class="text-section">
+            <h1>Hello! I'm Aishwarya</h1>
+            <p>Hello! I’m Aishwarya, a passionate web developer and KIET student with experience in full-stack development and front-end design. I’m part of the TechLead program and the Global Coding Club, exploring new technologies and building impactful applications. Let's connect and create something amazing!</p>
+            <button class="resume-btn" onclick="window.open('path/to/your/resume.pdf', '_blank')">View Resume</button>
+            <div class="social-icons">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yourusername/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="profilepic.jpg" alt="Aishwarya's Picture">
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Aishwarya. All Rights Reserved.</p>
+    <p>Follow me on 
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+    </p>
+</footer>
+
+</body>
+</html>

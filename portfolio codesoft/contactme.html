@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Aishwarya</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #f7ecec;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            background-attachment: fixed;
+            color: #f8f8f8;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: goldenrod;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: cornsilk;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: goldenrod;
+        }
+
+        /* Main Styling */
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the content */
+            padding: 50px;
+            background: linear-gradient(135deg, #2c2c2c, #1c1c1c);
+        }
+
+        /* Content container styling */
+        .content {
+            display: flex;
+            flex-direction: column; /* Stack sections vertically */
+            align-items: flex-start;
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        /* Section Styling */
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .section h2 {
+            color: goldenrod;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #f0e68c;
+            margin-bottom: 10px;
+        }
+
+        /* Form Styling */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(248, 239, 239, 0.2);
+            color: #f8f8f8;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: goldenrod;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #e7d31b;
+        }
+
+        /* Footer Styling */
+        footer {
+            padding: 30px; /* Increased padding for more space */
+            background: linear-gradient(135deg, #000, #444); /* Gradient background */
+            color: cornsilk;
+            text-align: center;
+            margin-top: 50px; /* Margin to separate from the main content */
+            border-top: 3px solid goldenrod; /* Top border for a decorative touch */
+        }
+
+        footer p {
+            margin: 5px 0; /* Space between footer paragraphs */
+        }
+
+        footer a {
+            color: goldenrod;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #ffdb58; /* Lighten the color on hover */
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); /* Shadow effect on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aishwarya</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contactme.html">CONTACT ME</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <div class="section">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or just want to get in touch, feel free to reach out!</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Aishwarya. All Rights Reserved.</p>
+    <p>Follow me on 
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+    </p>
+</footer>
+
+</body>
+</html>
